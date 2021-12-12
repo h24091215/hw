@@ -1,0 +1,57 @@
+
+body{font-family: 'Times New Roman', Times, serif;
+    background-color: snow;
+    overflow-x: hidden;}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 50;
+    background-color: linen;
+    float:right ;
+    display:flex;
+    min-width: 100%;
+    justify-content: space-between;
+    
+}
+
+a{
+    color: maroon;
+    text-decoration: none;
+}
+nav{font-size:35px;top: 10;}
+header.logo{
+    align-self: flex-end;
+}
+aside{
+    left: 0;
+    bottom: 0;
+    position: fixed;;
+}
+footer{position:fixed; bottom:0; right:0}
+main{
+    top: 15%;
+    left: 610px;
+    padding: 30px 5px 20px 5px;
+    margin: 5;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bigbox{display: flex;}
+
+.slides{
+    height: 300;
+    overflow:hidden;
+}
+.slides:hover{
+    animation: 8s aa infinite;
+}
+
+@keyframes aa{
+    0%{ }
+    25%{transform: translateX(-300px);}
+    50%{transform: translateX(-600px);}
+    75%{transform: translateX(-900px);}
+}
